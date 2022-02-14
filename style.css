@@ -1,0 +1,134 @@
+*
+{
+    margin: 0rem;
+    padding: 0rem;
+}
+html
+{
+    font-size: 8px;
+    font-family: consolas;
+}
+.container
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(24, 24, 58);
+}
+.container:hover .circle-1 h1
+{
+    opacity: 100%;
+    transition: 300s ease-in;
+    z-index: 10;
+}
+.circle-1
+{
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to bottom right, yellow, red);
+    border-radius: 50%;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-1 h1
+{
+    opacity: 0%;
+    font-size: 4rem;
+    color: red;
+}
+.circle-2
+{
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to bottom right, aqua, green);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.circle-2 h1
+{
+    font-size: 10rem;
+    padding-bottom: 5rem;
+    padding-left: 5rem;
+    color: red;
+    opacity: 0%;
+}
+.circle-2:hover h1
+{
+    transition: 50s ease-in;
+    opacity: 100%;
+}
+.list
+{
+    padding: 2rem;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+    z-index: 2;
+    backdrop-filter: blur(5rem);
+    background: transparent;
+    border: 1px solid #e0d7d7;
+    border-radius: 3rem;
+    box-shadow: 0 0 1rem #c2b5b5;
+}
+.list h1
+{
+    font-size: 5rem;
+    color: #ffffff;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.list-1
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 3rem;
+    box-shadow: 0 0 5rem transparent;
+}
+.list-1 img
+{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+}
+.list-1 h2
+{
+    font-size: 4rem;
+    padding: 1rem;
+}
+.list-1 p
+{
+    position: absolute;
+    font-size: 4rem;
+    right: -5rem;
+    color: transparent;
+}
+.list-1:hover
+{
+    background: aqua;
+    box-shadow: 0 0 5rem aqua;
+    transition: 1s;
+    border-radius: 3rem;
+}
+.list-1:hover p
+{
+    right: 1rem;
+    color: #ffffff;
+    transition: 1s linear;
+}
